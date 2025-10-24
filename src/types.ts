@@ -51,3 +51,18 @@ export interface PrayerTimesResult {
     notes: string[];
   };
 }
+
+export interface MonthScheduleOptions extends Omit<PrayerCalcOptions, "date"> {
+  year: number; // tahun, mis. 2025
+  month: number; // 1..12
+}
+
+export interface DayPrayerRow extends PrayerTimesResult {
+  date: { year: number; month: number; day: number }; // tanggal lokal
+}
+
+export interface MonthScheduleResult {
+  year: number;
+  month: number; // 1..12
+  rows: DayPrayerRow[]; // urut 1..n
+}

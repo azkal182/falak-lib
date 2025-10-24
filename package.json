@@ -1,6 +1,6 @@
 {
   "name": "falak-lib",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Falak: perhitungan waktu sholat, imsak, dhuha, dan arah kiblat (TypeScript).",
   "author": "azkal",
   "license": "MIT",
